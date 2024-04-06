@@ -1,0 +1,713 @@
+
+
+:root{
+    --main-color:#;
+    --bg-color:#e9c91c;
+    --secondary-color:#e5e5e5;
+    --button:#;
+    --text-color:#;
+    --secondary-text-color:#;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    background: var(--bg-color)!important;
+}
+.heading{
+    font-size: 56px;
+    width: 60%;
+    /* text-align: center; */
+}
+section{
+    padding: 1.5rem 7%;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+p{
+    font-size: 20px;
+}
+
+/*--------- btn ---------*/
+.btms {
+    background-color: var(--bg-color)!important;
+    border: none!important;
+    padding: .4rem 2rem!important;
+    font-weight: 500!important;
+}
+.btms:hover{
+    letter-spacing: 1px;
+    
+}
+
+
+/*----- header start -----*/
+header{
+    display: flex;
+    justify-content: space-between!important;
+    align-items: center;
+    padding: 1.5rem 7%;
+    position: fixed!important;
+    z-index: 1000;
+    width: 100%;
+    border-bottom: 1rem solid rgb(161, 156, 156);
+    position: relative;
+    background-color: var(--bg-color);
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    margin: 0 2rem;
+    position: relative;
+}
+header nav ul li a{
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: #000;
+    font-weight: 600;
+    transition: 0.6s;
+    
+}
+header nav ul li a:hover{
+    color: #fff;
+}
+header nav ul li a:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .5s;
+    background-color: #810000;
+    
+}
+header nav ul li a:hover:after{
+    width: 100%;
+}
+header .mmn{
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+header .mmn:hover{
+    color: blueviolet;
+}
+/*----- header end -----*/
+
+/*-------- home start ------- */
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 18rem;
+    padding-bottom: 22rem;
+    background-color: #fff;
+    
+}
+#home .home-img{
+    margin-right: 2.5rem;
+}
+#home .home-im img{
+    width: 100%;
+   
+}
+
+#home .home-contant{
+    margin-left: 2.5rem;
+}
+#home .home-contant p{
+    width: 80%;
+}
+#home .home-contant a{
+    color: #000;
+}
+#home .home-extra{
+    display: none;
+}
+
+/*-------- home end ------- */
+/* Happiness start */
+.relative{
+    position: relative;
+}
+.happiness{
+    padding: 1.5rem 2%;
+    height:407px ;
+    width: 70%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: -200px;
+    left: 15%;
+    border-radius: 10px;
+}
+.happiness .contant p{
+    width: 80%;
+}
+.happiness .contant a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.happiness .contant a:hover{
+    /* color: var(--bg-color); */
+    letter-spacing: 1px;
+}
+.happiness .img img{
+    width: 99%;
+}
+
+/* Happiness end */
+
+/* happy start */
+.happys{
+    padding: 300px 7% 5rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.happys .happy-contant p{
+    width: 50%;
+}
+.happys .happy-contant a{
+    background-color: #000!important;
+   
+}
+
+/* happy end */
+
+/*---- books start ----*/
+
+.books{
+    background-color: #fff;
+    padding: 7rem 0;
+}
+.books .books-items{
+    display: flex;
+    justify-content: center!important;
+    align-items: center;
+    padding: 5rem 0;
+    background-color: var(--secondary-color);
+}
+.books .books-items .books-img{
+    margin-right: 2rem;
+}
+
+.books .books-items .books-img img{
+    width: 99%;
+}
+.books .books-items .books-details{
+    margin-left: 2rem;
+   }
+.books .books-items .books-details .details h2{
+    color: var(--bg-color);
+    margin-bottom: 10px;
+}
+.books .books-items .books-details .details p{
+    width: 70%;
+}
+.books .books-items .books-details .details a{
+    background-color: #000!important;
+}
+.books .books-items .books-details .details-img{
+    margin-top: 4rem;
+}
+.books .books-items .books-details .details-img img{
+    width: 45%;
+}
+/*---- books start ----*/
+
+/*---- about start ----*/
+.about{
+    background-color: #000;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.about .about-item{
+    padding: 2rem;
+}
+.about .about-item h2{
+    color: var(--bg-color);
+    width: 100%;
+}
+.about .about-item p{
+    color: #fff;
+}
+.about .about-img img{
+    width: 50%;
+}
+.about .bts{
+    padding: 2rem 0;
+}
+/*---- about end ----*/
+
+/*----- our team start ------*/
+.our-team{
+    padding: 5rem 7%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team .our-img{
+    margin-right: 2.5rem;
+}
+/* .our-team .our-img img{
+    width: 100%;
+} */
+.our-team .our-contant{
+    margin-left: 2.5rem;
+}
+.our-team .our-contant p{
+    width: 80%;
+}
+/*----- our team end ------*/
+
+
+/*------ method start -------*/
+.method{
+    padding: 5rem 7%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.method .method-img{
+    margin-right: 2.5rem;
+}
+/* .method .method-img img{
+    width: 100%;
+} */
+.method .method-contant{
+    margin-left: 2.5rem;
+}
+.method .method-contant p{
+    width: 80%;
+}
+/*------ method end --------*/
+
+/*------ subscribe start -----*/
+.subscribe{
+    padding: 5rem 7%;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe form{
+    background-color: #000;
+    /* margin-right: 2.5rem; */
+    width: 100%;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.subscribe form .form{
+    display: flex;
+    justify-content: space-between;
+}
+.subscribe form .form input{
+    height: 50px;
+    width: 100%;
+    padding-left: 1rem;
+    border-radius: 5px;
+    margin: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.subscribe form .form2{
+    display: flex;
+    flex-direction: column;
+    
+}
+.subscribe form .form2 input{
+    height: 50px;
+    width: 100%;
+    padding-left: 1rem;
+    border-radius: 5px;
+    margin: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid #fff;
+    color: #fff;
+}
+.subscribe form p{
+    color: #fff;
+    margin: 1rem;
+    width: 100%;
+}
+
+.subscribe .subscribe-contant{
+    margin-left: 2.5rem;
+}
+.subscribe .subscribe-contant p{
+    width: 80%;
+}
+/*------ subscribe end -----*/
+
+/*------ footer start ------*/
+.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #000;
+    color: wheat;
+}
+.footer .manuss{
+    display: flex;
+    padding: 0 0 2rem 0;
+    border-bottom: 2px solid white;
+}
+.footer .manuss .manuss-btn{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+
+}
+.footer .manuss .manuss-btn a{
+    text-decoration: none;
+    padding: .2rem 1rem;
+    color: #fff;
+}
+.footer .manuss .manuss-btn a:hover{
+    color: #e9c91c;
+}
+.footer .manuss .manuss-btns{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.footer .manuss .manuss-btns a{
+    text-decoration: none;
+    padding: .2rem 1rem;
+    color: #fff;
+}
+.footer .manuss .manuss-btns a:hover{
+    color: #e9c91c;
+}
+.footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+
+}
+.footer .copyright a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer .copyright a:hover{
+    color: #e9c91c;
+}
+.footer .copyright .fblogo a{
+    margin: .5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+.footer .copyright .fblogo a:hover{
+    color: aquamarine;
+}
+/*------ footer end ------*/
+
+
+
+
+
+
+
+
+
+@media (max-width:1320px){
+    .heading{
+        font-size: 50px;
+        width: 65%;
+    }
+    /*-------- home start ------- */
+    
+    #home .home-img{
+    margin-right: 2rem;
+    }
+    #home .home-contant{
+    margin-left: 2rem;
+    }
+    /*-------- home end ------- */
+    /* happys start */
+    .happiness .contant h2{
+        width: 100%;
+    }
+    .happiness .contant p{
+        width: 100%;
+    }
+    .happys .happy-img img{
+        width: 550px;
+        height: auto;
+    }
+    /* happys end */
+}
+
+@media (max-width:1140px){
+    .heading{
+        font-size: 40px;
+        width: 100%;
+    }
+    /*-------- home start ------- */
+    /*-------- home start ------- */
+    #home{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    #home .home-img{
+        margin-right: 0;
+        margin-top: 2.5rem;
+       
+    }
+    #home .home-img img{
+        width: 99%;
+    }
+    #home .home-contant{
+        margin-left: 0;
+        margin-bottom: 2.5rem;
+        
+    }
+    #home .home-contant p{
+        width: 100%;
+    }
+    
+    #home .home-extra{
+        display: inline-block;
+    }
+    #home .home-none{
+        display: none;
+        
+    }
+    /*-------- home end ------- */
+    /*-------- home end ------- */
+
+    /* Happiness start */
+    .happiness{
+        display: inline-block;
+        height: 550px;
+        padding: 3rem;
+        top: -300px;
+    }
+    .happiness .contant{
+        margin-bottom: 4rem;
+    }
+    .happiness .img{
+        margin-top: 4rem;
+    }
+
+    /* happy start */
+    .happys{
+        padding: 250px 7% 5rem 7%;
+        display: inline-block;
+        text-align: center;
+    }
+    .happys .happy-contant{
+        padding: 4rem 0;
+    }
+    .happys .happy-contant p{
+        width: 100%;
+    }
+    
+    .happys .happy-img img{
+        width: 100%;
+    }
+/* happy end */
+
+
+/*---- books start ----*/
+.books{
+   padding: 1rem 0;
+}
+.books .books-items{
+    flex-direction: column;
+}
+.books .books-items .books-img{
+    margin-right: 0;
+}
+
+.books .books-items .books-img img{
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+.books .books-items .books-details{
+    margin-left: 0;
+    text-align: center;
+    margin-top: 2.5rem;
+   }
+
+.books .books-items .books-details .details p{
+    width: 100%;
+}
+
+/*---- books end ----*/
+/*----- our team start ------*/
+.our-team{
+    padding: 5rem 2rem;
+    flex-direction: column-reverse;
+    text-align: center;
+
+}
+.our-team .our-img{
+    margin-top: 2.5rem;
+    margin-right: 0;
+}
+.our-team .our-img img{
+    width: 100%;
+}
+.our-team .our-contant{
+    margin-bottom:2.5rem;
+    margin-left: 0;
+}
+.our-team .our-contant p{
+    width: 100%;
+}
+
+/*------ method start -------*/
+.method{
+    padding: 5rem 2rem;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.method .method-img{
+    margin-right: 0;
+    margin-top: 2.5rem;
+}
+.method .method-img img{
+    width: 100%;
+}
+.method .method-contant{
+    margin-bottom: 2.5rem;
+    margin-left: 0;
+}
+.method .method-contant p{
+    width: 100%;
+}
+/*------ method end --------*/
+
+/*------ subscribe start -----*/
+.subscribe{
+    padding: 5rem 2rem;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.subscribe form p{
+    width: 100%;
+}
+
+.subscribe .subscribe-contant{
+    margin-left: 0;
+    margin-bottom: 2.5rem;
+}
+.subscribe .subscribe-contant p{
+    width: 100%;
+}
+/*------ subscribe end -----*/
+
+}
+@media (max-width:960px){
+    .heading{
+        font-size: 38px;
+        
+    }
+    section{
+        padding: 1.5rem 2rem;  
+    }
+
+    /*----- header start -----*/
+
+    header{
+        padding: 1.5rem 2rem;
+    }
+    header nav{
+        position: absolute;
+        background-color: var(--secondary-color);
+        top: 6rem; left: -999999px;
+        height: 100vh;
+        border-radius: 10px;
+        transition: .3s;
+       
+        
+    }
+    header nav.active{
+        left: 0;
+    }
+    header nav ul{
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        
+    }
+    header nav ul li{
+        margin-top: 2rem;
+        text-align: center;
+    }
+    
+
+    header .mmn{
+        display: inline-block;
+    }
+
+    /*----- header end -----*/
+    /*---- about start ----*/
+    .about .about-img img{
+        width: 80%;
+    }
+    /*---- about end ----*/
+    
+        
+}
+
+
+@media (max-width:720px){
+     .heading{
+        font-size: 35px;
+       
+    }
+    /*---- about start ----*/
+    .about .about-img img{
+        width: 100%;
+    }
+    /*---- about end ----*/
+    .subscribe form .form{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+}
+@media (max-width:540px){
+    .heading{
+        font-size: 35px;
+        width: 100%;
+    }
+    p{
+        font-size: 15px;
+    }
+}
